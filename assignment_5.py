@@ -1,9 +1,14 @@
+import re
+
+pan = input("Enter PAN number: ")
+
+if re.fullmatch(r"[A-Z]{5}[0-9]{4}[A-Z]", pan):
+    print("Valid PAN Number")
+else:
+    print("Invalid PAN Number")
 
 
 
 
 
-l = [1, 2, 3]
-init_tuple = ('Python',) * (l.len() - l[::-1][0])
-print(init_tuple)
 
